@@ -5,5 +5,52 @@
 }
 
 body{
-    background-color: aqua;
+    background-color: #005580;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    color: white;
+}
+
+header{
+    height: 120px;
+    background-color: #00334d;
+    margin-bottom: 3rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: calc(100% / 3);
+    height: 450px;
+    padding: 1.5rem;
+}
+
+.card{
+    height: 100%;
+    background-color:  #00334d;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+figure{
+    width: 220px;
+    height: 240px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h4{
+    padding: 0.5rem 0;
 }
