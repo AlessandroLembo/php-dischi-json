@@ -1,7 +1,12 @@
 <?php
 
 // create string 
-$sourse_url = __DIR__ . '/data.json';
+$source_url = __DIR__ . '/data.json';
+
+// read file
+$json_data = file_get_contents($source_url);
+
+$disc = json_decode($json_data, true);
 
 // $discs = [
 //     [
@@ -80,4 +85,4 @@ $sourse_url = __DIR__ . '/data.json';
 header('Content-Type: application/json');
 
 // convert to jason and return the disks
-echo json_encode($discs);
+echo json_encode($disc);
