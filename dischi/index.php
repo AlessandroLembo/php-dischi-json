@@ -72,3 +72,9 @@ $discs = [
         'genre' => 'Pop'
     ],
 ];
+
+// want to write in json language
+header('Content-Type: application/json');
+
+// convert to jason and return the disks
+echo json_encode($discs);
