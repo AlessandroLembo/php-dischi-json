@@ -50,7 +50,7 @@ header{
 
 .card{
     height: 100%;
-    background-color:  #00334d;
+    background-color: #00334d;
     display: flex;
     align-items: center;
     flex-direction: column;
